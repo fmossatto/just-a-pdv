@@ -1,0 +1,100 @@
+@import '../../styles/variables.scss';
+
+.login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        justify-content: space-between;
+        width: 60em;
+
+        .header {
+            h1 {
+                color: $primary;
+            }
+        }
+
+        .loginContainer {
+            border: 2px solid $primary;
+            border-radius: 10px;
+            display: flex;
+            height: 28em;
+            overflow: hidden;
+            width: 100%;
+
+            .logo {
+                align-items: center;
+                background-color: $primary;
+                display: flex;
+                justify-content: center;
+                width: 24em;
+
+                img {
+                    height: 260px;
+                    width: 260px;
+                    object-fit: cover;
+                }
+            }
+
+            .loginForm {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 36em;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.75em;
+                    padding: 2em;
+                    width: 100%;
+
+                    div {
+                        align-content: center;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+                        color: $primary;
+                        display: flex;
+                        gap: 1em;
+                        justify-content: center;
+                        padding: 0.5em 0;
+                        width: 100%;
+                    }
+
+                    input {
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1.25em;
+                        outline: none;
+                        width: 80%;
+
+                        &::placeholder {
+                            color: $primary;
+                        }
+                    }
+
+                    button {
+                        background-color: $primary;
+                        border: none;
+                        border-radius: 10px;
+                        color: $white;
+                        font-size: 1.25em;
+                        font-weight: bold;
+                        padding: 0.7em 0;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $bg-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
